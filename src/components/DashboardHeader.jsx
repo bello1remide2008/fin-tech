@@ -36,7 +36,9 @@ const DashboardHeader = () => {
         {/* Notification Bell */}
         <button className="relative text-gray-400 hover:text-gray-600 transition-colors">
           <Bell className="w-6 h-6" />
-          <span className="absolute top-0 right-0 w-2 h-2 bg-red-500 rounded-full border-2 border-white"></span>
+          <span 
+            onClick={() => window.location.href = "/about-us"}
+            className="absolute top-0 right-0 w-2 h-2 bg-red-500 rounded-full border-2 border-white"></span>
         </button>
 
         {/* User Profile / Upload Section */}
@@ -68,5 +70,6 @@ const DashboardHeader = () => {
     </header>
   );
 };
+
 
 export default DashboardHeader;

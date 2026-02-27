@@ -82,7 +82,8 @@ const Navbar = () => {
         {/* Menu Items */}
         <ul className="flex flex-col items-center justify-center h-full gap-8 text-gray-700 text-xl font-medium">
           <li onClick={() => setOpen(false)} className="hover:text-red-500">Home</li>
-          <li onClick={() => setOpen(false)} className="hover:text-red-500">About</li>
+          <li onClick={() => navigate("/about-us")}
+            className="hover:text-red-500">About</li>
           <li onClick={() => setOpen(false)} className="hover:text-red-500">Contact</li>
 
           {/* Buttons Side by Side */}
@@ -106,5 +107,6 @@ const Navbar = () => {
     </>
   );
 };
+
 
 export default Navbar;

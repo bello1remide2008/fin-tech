@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Bell, Download, Share2, Copy } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import {QRCode} from "react-qr-code";
+import QRCode from "react-qr-code";
 
 
 const ReceiveMoney = () => {
@@ -162,5 +162,6 @@ const ReceiveMoney = () => {
     </div>
   );
 };
+
 
 export default ReceiveMoney;
